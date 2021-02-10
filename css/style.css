@@ -68,8 +68,8 @@ header.container {
 
 .button {
   padding: 10px 20px;
-  background: #2123ad;
-  border-radius: 10px;
+  background: #21ad21;
+  border-radius: 3px;
   border: none;
   color: #fff;
   font-family: sans-serif;
@@ -77,4 +77,32 @@ header.container {
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
+}
+
+.tasks div {
+  margin: 50px 0px;
+}
+
+.task-registration,
+.task-splash-screen {
+  display: flex;
+  justify-content: center;
+}
+
+.task-splash-screen .button {
+  width: 100%;
+}
+
+footer {
+  background-color: #939699;
+}
+
+h2 {
+  color: #55585a;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  padding-left: 1%;
 }
