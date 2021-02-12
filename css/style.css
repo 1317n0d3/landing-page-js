@@ -79,7 +79,7 @@ header.container {
   line-height: 20px;
 }
 
-.tasks div {
+.tasks .task {
   margin: 50px 0px;
 }
 
@@ -105,4 +105,51 @@ h2 {
   line-height: 20px;
   letter-spacing: 0.5px;
   padding-left: 1%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  width: 50px;
+  font-family: sans-serif;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-style: normal;
+  padding: 7px;
+}
+
+input[type="text"] {
+  width: 50%;
+  font-family: sans-serif;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-style: normal;
+  padding: 7px;
+}
+
+label {
+  color: #353738;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.task div {
+  margin: 15px 0;
+}
+
+.task-triangle-condition {
+  display: flex;
+}
+
+.task-triangle-condition-image img {
+  max-height: 200px;
 }

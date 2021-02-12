@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/JavaScript-logo.png" type="image/png">
     <script src="js/triangle.js"></script>
+    <script src="js/compareStrings.js"></script>
 </head>
 <body>
     <header class="container">
@@ -38,31 +39,56 @@
         <img width="100%" src="img/JavaScript-wallpaper.jpeg" alt="wallpaper: JavaScript" class="wallpaper-image">
     </div>
     <div class="container tasks" href="#tasks">
-        <div class="task-registration">
+        <div class="task-registration task">
             <button class="button">
                 <span class="button-text">Пройдите регистрацию, чтобы увидеть список задач</span>
             </button>
         </div>
-        <div class="task-triangle">
+        <div class="task-triangle task">
             <h2>Площадь треугольника</h2>
-            <label for="base">Основание треугольника: </label>
-            <input type="number" min="0" name="base" id="base">
-            <label for="height">Высота треугольника:</label>
-            <input type="number" min="0" name="height" id="height">
+            <div class="task-triangle-condition">
+                <form class="task-triangle-condition-input" name="triangle">
+                    <div class="task-triangle-condition-input-base">
+                        <label for="base">Основание треугольника: </label>
+                        <input type="number" min="0" name="base" id="base" value="0">
+                    </div>
+                    <div class="task-triangle-condition-input-height">
+                        <label for="height">Высота треугольника:</label>
+                        <input type="number" min="0" name="height" id="height" value="0">
+                    </div>
+                    <div class="task-triangle-condition-input-submit">
+                        <input type="button" value="Узнать площадь" onClick="getArea();" class="button">
+                    </div>
+                </form>
+                <div class="task-triangle-condition-image">
+                    <img src="img/triangle.png" alt="image: triangle">
+                </div>
+            </div>
         </div>
-        <div class="task-string">
+        <div class="task-string task">
             <h2>Сравнение количества символов</h2>
+            <form class="task-string-input" name="strings">
+                <div class="task-string-input-string">
+                    <input type="text" name="string1" id="string1" placeholder="Введите первую строку">
+                </div>
+                <div class="task-string-input-string">
+                    <input type="text" name="string2" id="string2" placeholder="Введите вторую строку">
+                </div>
+                <div class="task-string-input-submit">
+                    <input type="button" value="Сравнить строки" onClick="compareStrings();" class="button">
+                </div>
+            </form>
         </div>
-        <div class="task-array">
+        <div class="task-array task">
             <h2>Максимальное и минимальное значение массива</h2>
         </div>
-        <div class="task-timer">
+        <div class="task-timer task">
             <h2>Таймер</h2>
         </div>
-        <div class="task-test">
+        <div class="task-test task">
             <h2>Тест на знание JavaScript</h2>
         </div>
-        <div class="task-splash-screen">
+        <div class="task-splash-screen task">
             <button class="button">
                 <span class="button-text">Splash screen</span>
             </button>
