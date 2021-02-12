@@ -1,6 +1,6 @@
 function getArea (){
-    var height = this.height.value;
-    var base = this.base.value;
-    var area = (height * base) / 2;
+    let height = this.height.value;
+    let base = this.base.value;
+    let area = (height * base) / 2;
     console.log(area);
 }
