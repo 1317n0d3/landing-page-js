@@ -83,12 +83,7 @@ header.container {
   margin: 50px 0px;
 }
 
-.task-registration,
-.task-splash-screen {
-  display: flex;
-  justify-content: center;
-}
-
+.task-registration button,
 .task-splash-screen .button {
   width: 100%;
 }

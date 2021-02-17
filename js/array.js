@@ -6,16 +6,8 @@ function getMaxElem(){
         this.el4.value,
         this.el5.value
     ];
-    
-    let maxElem = arr[0];
 
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] > maxElem){
-            maxElem = arr[i];
-        }
-    }
-
-    console.log(maxElem);
+    console.log(Math.max.apply(null, arr));
 }
 
 function getMinElem(){
@@ -26,14 +18,6 @@ function getMinElem(){
         this.el4.value,
         this.el5.value
     ];
-    
-    let minElem = arr[0];
 
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] < minElem){
-            minElem = arr[i];
-        }
-    }
-
-    console.log(minElem);
+    console.log(Math.min.apply(null, arr));
 }

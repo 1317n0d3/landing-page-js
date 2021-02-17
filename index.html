@@ -9,6 +9,8 @@
     <script src="js/triangle.js"></script>
     <script src="js/compareStrings.js"></script>
     <script src="js/array.js"></script>
+    <script src="js/registration.js"></script>
+    <script src="js/timer.js"></script>
 </head>
 <body>
     <header class="container">
@@ -33,7 +35,7 @@
             </nav>
         </div>
         <div class="user">
-            <a href="#" class="user-link">Sign-up</a>
+            <a href="#" class="user-link" id="sign-up"></a>
         </div>
     </header>
     <div class="container tutorial">
@@ -41,9 +43,15 @@
     </div>
     <div class="container tasks" href="#tasks">
         <div class="task-registration task">
-            <button class="button">
-                <span class="button-text">Пройдите регистрацию, чтобы увидеть список задач</span>
-            </button>
+            <div class="task-registration-button">
+                <button class="button">
+                    <span class="button-text">Пройдите регистрацию, чтобы увидеть список задач</span>
+                </button>
+            </div>
+            <form class="task-registration-input" name="login">
+                <input type="text" name="login" id="login" placeholder="Введите логин">
+                <input type="button" value="Зарегистрироваться" onClick="registration();" class="button" minlength="3" maxlength="10">
+            </form>
         </div>
         <div class="task-triangle task">
             <h2>Площадь треугольника</h2>
@@ -101,6 +109,17 @@
         </div>
         <div class="task-timer task">
             <h2>Таймер</h2>
+            <div class="task-timer-condition">
+                <div>
+                    <label id="timer">00:00</label>
+                </div>
+                <button class="button" id="toggle">
+                    Start
+                </button>
+                <button class="button" id="reset">
+                    Reset
+                </button>
+            </div>
         </div>
         <div class="task-test task">
             <h2>Тест на знание JavaScript</h2>
@@ -115,5 +134,6 @@
         <div class="container">
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
