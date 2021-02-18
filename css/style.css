@@ -37,7 +37,7 @@ header.container {
 
 .navigation-link {
   text-decoration: none;
-  color: #939699;
+  color: #323330;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -47,7 +47,8 @@ header.container {
   letter-spacing: 0.5px;
 }
 .navigation-link:hover {
-  color: #21ad21;
+  transition: 150ms ease;
+  color: #4b8bbe;
 }
 
 .user {
@@ -57,7 +58,7 @@ header.container {
 
 .user-link {
   text-decoration: none;
-  color: #55585a;
+  color: #323330;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -68,15 +69,16 @@ header.container {
 
 .button {
   padding: 10px 20px;
-  background: #21ad21;
+  background: #ffd43b;
   border-radius: 3px;
   border: none;
-  color: #fff;
+  color: #323330;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .tasks .task {
@@ -89,11 +91,11 @@ header.container {
 }
 
 footer {
-  background-color: #939699;
+  background-color: #323330;
 }
 
 h2 {
-  color: #55585a;
+  color: #323330;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -129,7 +131,7 @@ input[type="text"] {
 }
 
 label {
-  color: #353738;
+  color: #323330;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 900;
