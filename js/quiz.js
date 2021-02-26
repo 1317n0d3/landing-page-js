@@ -77,16 +77,18 @@ const renderQuestions = (index) => {
 
 const renderResults = () => {
     let content = '';
-    // let score = 0;
+    let score = 0;
 
     const getClassname = (answer, questionIndex) => {
         let classname = '';
 
         if(!answer.correct && answer.id === localResults[questionIndex]){
             classname = 'answer--invalid';
-        } else if(answer.correct) {
+        } else if(answer.correct && answer.id === localResults[questionIndex]) {
             classname = 'answer--valid';
-            // score++;
+            score++;
+        } else if(answer.correct){
+            classname = 'answer--valid';
         }
 
         return classname;
@@ -105,9 +107,9 @@ const renderResults = () => {
         `;
     });
 
-    // content += `
-    //     <div class="quiz-results-score">${score}</div>
-    // `;
+    content += `
+        <div class="quiz-results-score">Правильные ответы: ${score}</div>
+    `;
 
     results.innerHTML = content;
 };

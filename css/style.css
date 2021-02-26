@@ -234,3 +234,11 @@ label {
 .answer--valid {
   color: green;
 }
+
+.quiz-results-score {
+  color: #323330;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
