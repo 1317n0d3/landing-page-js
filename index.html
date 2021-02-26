@@ -124,9 +124,34 @@
                 </button>
             </div>
         </div>
-        <div class="task-test task">
+
+
+        <div class="task-quiz task">
             <h2>Тест на знание JavaScript</h2>
+            <div class="quiz" id="quiz">
+
+                <div class="quiz-questions" id="questions"></div>
+
+                <div class="quiz-indicator" id="indicator">1/10</div>
+
+                <div class="quiz-results" id="results">
+                    <div class="quiz-results-item">
+                        <div class="quiz-results-item-question">Вопрос 1</div>
+                        <ul class="quiz-results-item-answers">
+                            <li>Ответ 1</li>
+                            <li>Ответ 2</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="quiz-controls">
+                    <button class="btn-next button" id="btn-next" disabled>Далее</button>
+                    <button class="btn-restart button" id="btn-restart">С начала</button>
+                </div>
+            </div>
         </div>
+
+
         <div class="task-splash-screen task">
             <button class="button">
                 <span class="button-text">Splash screen</span>
@@ -137,6 +162,7 @@
         <div class="container">
         </div>
     </footer>
+    <script src="js/quiz.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

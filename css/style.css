@@ -163,3 +163,74 @@ label {
   margin: 7px 0;
   width: 50%;
 }
+
+.quiz {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.quiz-questions,
+.quiz-results {
+  margin-bottom: 20px;
+}
+
+.quiz-questions-item-question,
+.quiz-results-item-question {
+  color: #323330;
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.quiz-results-item-answers li {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.quiz-questions-item-answers,
+.quiz-results-item-answers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.quiz-indicator {
+  color: #323330;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.quiz-results {
+  display: none;
+}
+
+.btn-restart {
+  display: none;
+}
+
+.questions--hidden,
+.indicator--hidden,
+.btn-next--hidden {
+  display: none;
+}
+
+.results--visible,
+.btn-restart--visible {
+  display: block;
+}
+
+.answer--invalid {
+  color: red;
+}
+
+.answer--valid {
+  color: green;
+}
