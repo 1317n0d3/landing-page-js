@@ -39,7 +39,7 @@
         </div>
     </header>
     <div class="container tutorial">
-        <img width="100%" src="" alt="wallpaper: JavaScript" class="wallpaper-image">
+        <!-- <img width="100%" src="" alt="wallpaper: JavaScript" class="wallpaper-image"> -->
     </div>
     <div class="container tasks" href="#tasks">
         <div class="task-registration task">
@@ -68,6 +68,7 @@
                     <div class="task-triangle-condition-input-submit">
                         <input type="button" value="Узнать площадь" onClick="getArea();" class="button">
                     </div>
+                    <label id="task-triangle-answer"></label>
                 </form>
                 <div class="task-triangle-condition-image">
                     <img src="img/triangle.png" alt="image: triangle">
@@ -86,6 +87,7 @@
                 <div class="task-string-input-submit">
                     <input type="button" value="Сравнить строки" onClick="compareStrings();" class="button">
                 </div>
+                <label id="task-string-answer"></label>
             </form>
         </div>
         <div class="task-array task">
@@ -105,6 +107,7 @@
                 <div class="task-array-input-minValue">
                     <input type="button" value="Найти наименьший элемент" onClick="getMinElem();" class="button">
                 </div>
+                <label id="task-array-answer"></label>
             </form>
         </div>
         <div class="task-timer task">
@@ -123,7 +126,6 @@
         </div>
         <div class="task-test task">
             <h2>Тест на знание JavaScript</h2>
-            <iframe src="quiz.html" frameborder="0" class="quiz-frame" width="480px" height="720px"></iframe>
         </div>
         <div class="task-splash-screen task">
             <button class="button">

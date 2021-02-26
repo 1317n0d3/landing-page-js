@@ -7,7 +7,8 @@ function getMaxElem(){
         this.el5.value
     ];
 
-    console.log(Math.max.apply(null, arr));
+    document.getElementById('task-array-answer').textContent =
+        'Ответ: наибольший элемент равен ' + Math.max.apply(null, arr);
 }
 
 function getMinElem(){
@@ -19,5 +20,7 @@ function getMinElem(){
         this.el5.value
     ];
 
-    console.log(Math.min.apply(null, arr));
+    
+    document.getElementById('task-array-answer').textContent =
+        'Ответ: наименьший элемент равен ' + Math.min.apply(null, arr);
 }
