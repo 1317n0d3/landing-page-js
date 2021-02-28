@@ -1,5 +1,12 @@
 function setLogin(){
-    document.getElementById('sign-up').textContent = localStorage.getItem('login');
+    let login = localStorage.getItem('login');
+    if(login != undefined)
+        document.getElementById('sign-up').textContent = login;
+}
+
+function logOut(){
+    localStorage.removeItem('login');
+    document.getElementById('sign-up').textContent = 'Sign-up';
 }
 
 document.addEventListener("DOMContentLoaded", setLogin());

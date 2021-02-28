@@ -1,5 +1,14 @@
 body {
   margin: 0;
+  color: #323330;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+p {
+  text-align: justify;
 }
 
 .logo {
@@ -99,13 +108,13 @@ footer {
 }
 
 h2 {
+  text-align: center;
   color: #323330;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 900;
   line-height: 20px;
   letter-spacing: 0.5px;
-  padding-left: 1%;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -164,9 +173,16 @@ label {
   width: 50%;
 }
 
+.task-quiz {
+  display: flex;
+  justify-content: center;
+}
+
 .quiz {
-  margin: 0 auto;
-  width: 600px;
+  width: 300px;
+  background-color: #eaec9b;
+  padding: 20px;
+  border-radius: 7px;
 }
 
 .quiz-questions,

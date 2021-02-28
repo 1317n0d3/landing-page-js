@@ -36,13 +36,44 @@
             </nav>
         </div>
         <div class="user">
-            <a href="#" class="user-link" id="sign-up"></a>
+            <a href="#" class="user-link" id="sign-up" onClick="logOut();">Sign-up</a>
         </div>
     </header>
     <div class="container tutorial">
         <!-- <img width="100%" src="" alt="wallpaper: JavaScript" class="wallpaper-image"> -->
+        <h2>Что такое JavaScript?</h2>
+        <p>Изначально JavaScript был создан, чтобы «сделать веб-страницы живыми».
+        <br><br>
+        Программы на этом языке называются скриптами. Они могут встраиваться в HTML и выполняться автоматически при загрузке
+        веб-страницы.
+        <br><br>
+        Скрипты распространяются и выполняются, как простой текст. Им не нужна специальная подготовка или компиляция для
+        запуска.
+        <br><br>
+        Это отличает JavaScript от другого языка – Java.
+        </p>
+
+        <h2>Области применения</h2>
+        <p>Современный JavaScript – это «безопасный» язык программирования. Он не предоставляет низкоуровневый доступ к памяти или
+        процессору, потому что изначально был создан для браузеров, не требующих этого.
+        <br><br>
+        Возможности JavaScript сильно зависят от окружения, в котором он работает. Например, Node.JS поддерживает функции
+        чтения/записи произвольных файлов, выполнения сетевых запросов и т.д.
+        <br><br>
+        В браузере для JavaScript доступно всё, что связано с манипулированием веб-страницами, взаимодействием с пользователем и
+        веб-сервером.
+        <br><br>
+        Например, в браузере JavaScript может:
+        <ul>
+            <li>Добавлять новый HTML-код на страницу, изменять существующее содержимое, модифицировать стили.</li>
+            <li>Реагировать на действия пользователя, щелчки мыши, перемещения указателя, нажатия клавиш.</li>
+            <li>Отправлять сетевые запросы на удалённые сервера, скачивать и загружать файлы (технологии AJAX и COMET).</li>
+            <li>Получать и устанавливать куки, задавать вопросы посетителю, показывать сообщения.</li>
+            <li>Запоминать данные на стороне клиента («local storage»).</li>
+        </ul>
+        </p>
     </div>
-    <div class="container tasks" href="#tasks">
+    <div class="container tasks" id="tasks">
         <div class="task-registration task">
             <div class="task-registration-button">
                 <button class="button">
@@ -54,8 +85,8 @@
                 <input type="button" value="Зарегистрироваться" onClick="registration();" class="button" minlength="3" maxlength="10">
             </form>
         </div>
+        <h2>Площадь треугольника</h2>
         <div class="task-triangle task">
-            <h2>Площадь треугольника</h2>
             <div class="task-triangle-condition">
                 <form class="task-triangle-condition-input" name="triangle">
                     <div class="task-triangle-condition-input-base">
@@ -76,14 +107,14 @@
                 </div>
             </div>
         </div>
+        <h2>Сравнение количества символов</h2>
         <div class="task-string task">
-            <h2>Сравнение количества символов</h2>
             <form class="task-string-input" name="strings">
                 <div class="task-string-input-string">
-                    <input type="text" name="string1" id="string1" placeholder="Введите первую строку">
+                    <input type="text" name="string1" id="string1" placeholder="Введите первую строку" required>
                 </div>
                 <div class="task-string-input-string">
-                    <input type="text" name="string2" id="string2" placeholder="Введите вторую строку">
+                    <input type="text" name="string2" id="string2" placeholder="Введите вторую строку" required>
                 </div>
                 <div class="task-string-input-submit">
                     <input type="button" value="Сравнить строки" onClick="compareStrings();" class="button">
@@ -91,16 +122,16 @@
                 <label id="task-string-answer"></label>
             </form>
         </div>
+        <h2>Максимальное и минимальное значение массива</h2>
         <div class="task-array task">
-            <h2>Максимальное и минимальное значение массива</h2>
             <form class="task-array-input">
                 <div class="task-array-input-array">
                     <label for="array">Введите массив из 5 элементов: </label>
-                    <input type="number" name="array" id="el1" value="0">
-                    <input type="number" name="array" id="el2" value="0">
-                    <input type="number" name="array" id="el3" value="0">
-                    <input type="number" name="array" id="el4" value="0">
-                    <input type="number" name="array" id="el5" value="0">
+                    <input type="number" name="array" id="el1" value="0" required>
+                    <input type="number" name="array" id="el2" value="0" required>
+                    <input type="number" name="array" id="el3" value="0" required>
+                    <input type="number" name="array" id="el4" value="0" required>
+                    <input type="number" name="array" id="el5" value="0" required>
                 </div>
                 <div class="task-array-input-maxValue">
                     <input type="button" value="Найти наибольший элемент" onClick="getMaxElem();" class="button">
@@ -111,8 +142,8 @@
                 <label id="task-array-answer"></label>
             </form>
         </div>
+        <h2>Таймер</h2>
         <div class="task-timer task">
-            <h2>Таймер</h2>
             <div class="task-timer-condition">
                 <div>
                     <label id="timer">00:00</label>
@@ -126,9 +157,8 @@
             </div>
         </div>
 
-
+        <h2>Тест на знание JavaScript</h2>
         <div class="task-quiz task">
-            <h2>Тест на знание JavaScript</h2>
             <div class="quiz" id="quiz">
 
                 <div class="quiz-questions" id="questions"></div>
