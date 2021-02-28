@@ -11,6 +11,7 @@
     <script src="js/array.js"></script>
     <script src="js/registration.js"></script>
     <script src="js/timer.js"></script>
+    <script src="js/splashScreen.js"></script>
 </head>
 <body>
     <header class="container">
@@ -145,11 +146,12 @@
 
 
         <div class="task-splash-screen task">
-            <button class="button">
+            <button class="button" onClick="splashScreen();">
                 <span class="button-text">Splash screen</span>
             </button>
         </div>
     </div>
+    <div class="splash-screen hidden" id="splash-screen" onClick="disableSplashScreen();"></div>
     <footer>
         <div class="container">
         </div>
