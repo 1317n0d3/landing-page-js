@@ -11,11 +11,11 @@ function logOut(){
 
 document.addEventListener("DOMContentLoaded", setLogin());
 
-let timer = document.getElementById('timer');
+let stopwatch = document.getElementById('stopwatch');
 let toggleBtn = document.getElementById('toggle');
 let resetBtn = document.getElementById('reset');
 
-let watch = new Stopwatch(timer);
+let watch = new Stopwatch(stopwatch);
 
 toggleBtn.addEventListener('click', function(){
     if (watch.isOn){
