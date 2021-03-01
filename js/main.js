@@ -30,3 +30,25 @@ toggleBtn.addEventListener('click', function(){
 resetBtn.addEventListener('click', function(){
     watch.reset();
 });
+
+let timerBtn = document.getElementById('timer-button');
+let timerTime = document.getElementById('timer-time');
+let timerValue = document.getElementById('timer');
+let timer;
+
+timerBtn.addEventListener('click', function(){
+
+    if(timerTime.value === '' && timerBtn.value === 'Start'){
+        timerValue.innerHTML = 'Введите нужное количество секунд';
+    } else if(timerTime.value < 0) {
+        timerValue.innerHTML = 'Некорректное значение';
+    } else if(timerBtn.value === 'Start'){
+        countdown(timerTime.value);
+        timerBtn.value = 'Stop';
+        timerTime.value = null;
+    } else if(timerBtn.value === 'Stop'){
+        clearTimeout(timer);
+        timerBtn.value = 'Start';
+        timerValue.innerHTML = '00:00';
+    }
+});
