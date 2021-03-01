@@ -1,12 +1,17 @@
 function setLogin(){
     let login = localStorage.getItem('login');
-    if(login != undefined)
+    if(login != undefined){
         document.getElementById('sign-up').textContent = login;
+        document.getElementById('tasks').classList.remove('invisible');
+        document.querySelector('.task-registration').classList.add('invisible');
+    }
 }
 
 function logOut(){
     localStorage.removeItem('login');
     document.getElementById('sign-up').textContent = 'Sign-up';
+    document.getElementById('tasks').classList.add('invisible');
+    document.querySelector('.task-registration').classList.remove('invisible');
 }
 
 document.addEventListener("DOMContentLoaded", setLogin());

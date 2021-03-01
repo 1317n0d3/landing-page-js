@@ -41,7 +41,7 @@
     </header>
     <div class="container tutorial">
         <!-- <img width="100%" src="" alt="wallpaper: JavaScript" class="wallpaper-image"> -->
-        <h2 id="what-is-js">Что такое JavaScript?</h2>
+        <h1 id="what-is-js">Что такое JavaScript?</h1>
         <p>Изначально JavaScript был создан, чтобы «сделать веб-страницы живыми».
         <br><br>
         Программы на этом языке называются скриптами. Они могут встраиваться в HTML и выполняться автоматически при загрузке
@@ -53,7 +53,7 @@
         Это отличает JavaScript от другого языка – Java.
         </p>
 
-        <h2 id="app-area">Области применения</h2>
+        <h1 id="app-area">Области применения</h1>
         <p>Современный JavaScript – это «безопасный» язык программирования. Он не предоставляет низкоуровневый доступ к памяти или
         процессору, потому что изначально был создан для браузеров, не требующих этого.
         <br><br>
@@ -73,18 +73,20 @@
         </ul>
         </p>
     </div>
-    <div class="container tasks" id="tasks">
-        <div class="task-registration task">
-            <div class="task-registration-button">
-                <button class="button">
-                    <span class="button-text">Пройдите регистрацию, чтобы увидеть список задач</span>
-                </button>
-            </div>
-            <form class="task-registration-input" name="login">
-                <input type="text" name="login" id="login" placeholder="Введите логин"><br>
-                <input type="button" value="Зарегистрироваться" onClick="registration();" class="button" minlength="3" maxlength="10">
-            </form>
+    <div class="task-registration task container">
+        <div class="task-registration-button">
+            <button class="button" disabled>
+                <span class="button-text">Пройдите регистрацию, чтобы увидеть список задач</span>
+            </button>
         </div>
+        <form class="task-registration-input" name="login">
+            <input type="text" name="login" id="login" placeholder="Введите логин"><br>
+            <input type="button" value="Зарегистрироваться" onClick="registration();" class="button" minlength="3"
+                maxlength="10">
+        </form>
+    </div>
+    <div class="container tasks invisible" id="tasks">
+        <h1>Задачи</h1>
         <h2>Площадь треугольника</h2>
         <div class="task-triangle task">
             <div class="task-triangle-condition">
@@ -103,7 +105,7 @@
                     <label id="task-triangle-answer"></label>
                 </form>
                 <div class="task-triangle-condition-image">
-                    <img src="img/triangle.png" alt="image: triangle">
+                    <!-- <img src="img/triangle.png" alt="image: triangle"> -->
                 </div>
             </div>
         </div>
@@ -161,6 +163,7 @@
         <div class="task-timer task">
             <div class="task-timer-condition" id="timer">00:00</div>
             <form class="task-timer-input">
+                <span>Количество секунд: </span>
                 <input type="number" name="timer" id="timer-time" placeholder="sec" required>
                 <input type="button" value="Start" class="button" id="timer-button">
             </form>
